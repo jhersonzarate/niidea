@@ -5,7 +5,6 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Configuración base de Spring Boot -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -13,13 +12,11 @@
         <relativePath/>
     </parent>
 
-    <!-- Información del proyecto -->
     <groupId>com.DentalElite</groupId>
     <artifactId>clinica-odontologica</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <!-- Versión de Java utilizada -->
         <java.version>17</java.version>
     </properties>
 
@@ -78,36 +75,16 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-api</artifactId>
-            <version>0.11.5</version>
-        </dependency>
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-impl</artifactId>
-            <version>0.11.5</version>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt-jackson</artifactId>
-            <version>0.11.5</version>
-            <scope>runtime</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
 
-            <!-- Plugin para ejecutar la aplicación Spring Boot -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-            <!-- Procesador de anotaciones para Lombok -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
